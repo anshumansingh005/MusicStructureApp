@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Payment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/purchase_music"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/InformationText"
+        android:layout_marginTop="16dp"
+        android:text="@string/info_payment" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/buttons_layout">
+
+
+        <Button
+            android:id="@+id/home"
+            style="@style/buttons"
+            android:layout_width="wrap_content"
+            android:text="@string/home" />
+
+    </LinearLayout>
+</RelativeLayout>

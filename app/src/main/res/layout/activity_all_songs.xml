@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllSongs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/all_song"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/InformationText"
+        android:layout_marginTop="16dp"
+        android:text="@string/info_all_songs" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearLayout2"
+        android:layout_below="@id/textView3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/song1"
+            style="@style/songList"
+            android:text="@string/song1" />
+
+        <TextView
+            android:id="@+id/song2"
+            style="@style/songList"
+            android:text="@string/song2" />
+
+        <TextView
+            android:id="@+id/song3"
+            style="@style/songList"
+            android:text="@string/song3" />
+
+        <TextView
+            android:id="@+id/song4"
+            style="@style/songList"
+            android:text="@string/song4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/buttons_layout">
+
+        <Button
+            android:id="@+id/playListButtonInAllSong"
+            style="@style/buttons"
+            android:layout_width="wrap_content"
+            android:text="@string/playlist" />
+
+        <Button
+            android:id="@+id/nowPlaying"
+            style="@style/buttons"
+            android:layout_width="wrap_content"
+            android:text="@string/now_playing" />
+
+        <Button
+            android:id="@+id/home"
+            style="@style/buttons"
+            android:layout_width="wrap_content"
+            android:text="@string/home" />
+
+    </LinearLayout>
+
+</RelativeLayout>
